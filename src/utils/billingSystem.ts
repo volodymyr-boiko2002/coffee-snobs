@@ -86,10 +86,12 @@ export const cakes = {
 
 // Function to calculate total cost for cakes
 function calculateCakes(cakeOrders: { [key: string]: number }): number {
-    return Object.entries(cakeOrders).reduce(
-        (total, [cake, quantity]) => total + (cakes[cake] || 0) * quantity,
-        0
-    );
+    let total = 0;
+    for (const [cake, quantity] of Object.entries(cakeOrders)) {
+        const price = cake in cakes ? cakes[cake as keyof typeof cakes] : 0;
+        total += price * quantity;
+    }
+    return total;
 }
 
 // Function to calculate the full order cost

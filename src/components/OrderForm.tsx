@@ -62,14 +62,14 @@ const OrderForm: React.FC<OrderFormProps> = ({onOrderSubmit}) => {
 
             {/* Cake selection */}
             <label className="block mb-2 font-semibold">Cakes:</label>
-            {Object.keys(cakeOptions).map(cake => (
-                <div key={cake} className="mb-2">
-                    <label className="mr-2">{cake} (${cakeOptions[cake]})</label>
+            {Object.entries(cakeOptions).map(([cakeName, cakePrice]) => (
+                <div key={cakeName} className="mb-2">
+                    <label className="mr-2">{cakeName} (${cakePrice})</label>
                     <input
                         type="number"
                         min="0"
-                        value={cakes[cake] || 0}
-                        onChange={(e) => handleCakeChange(cake, parseInt(e.target.value) || 0)}
+                        value={cakes[cakeName] || 0}
+                        onChange={(e) => handleCakeChange(cakeName, parseInt(e.target.value) || 0)}
                         className="p-1 border rounded w-16"
                     />
                 </div>

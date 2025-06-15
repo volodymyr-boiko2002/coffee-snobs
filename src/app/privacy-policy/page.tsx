@@ -5,32 +5,42 @@ const PrivacyPolicy = () => (
         <h1 className="text-3xl font-bold text-center mb-4">Privacy Policy</h1>
         <p className="text-lg">
             Welcome to Coffee Snobs. This website was created for educational purposes only. We want to clarify that
-            Coffee Snobs is not affiliated with or endorsed by any actual coffee brand or company. It is educational
+            Coffee Snobs is not affiliated with or endorsed by any actual coffee brand or company. It is an educational
             project to help learn about web development.
         </p>
         <h2 className="text-xl font-semibold mt-6">What Information Do We Collect?</h2>
         <p>
-            Website does not collect any personal information. Website does not track your data, website does not collect your email
-            or name, and website does not use cookies to follow you around. We only care about giving you a smooth experience on
-            the site.
+            We do not directly collect any personal information. Coffee Snobs does not ask for your name, email address, or any other personal data.
+            However, we use <strong>Vercel Analytics</strong> and <strong>Speed Insights</strong> to gather anonymous, non-identifying information 
+            such as page views, load times, device type, and general location (e.g., country or region). This helps us understand how the site is used 
+            and improve performance.
         </p>
         <h2 className="text-xl font-semibold mt-6">Do We Use Cookies?</h2>
         <p>
-            Website does do not use any cookies to track your browsing. Your visit to Coffee Snobs is totally cookie-free.
+            Coffee Snobs does not use cookies for tracking or personalization. Your visit is cookie-free from our end.
+            However, third-party services like Vercel Analytics may use cookies or similar technologies as part of their operation. 
+            You can read more in <a href="https://vercel.com/legal/privacy-policy" className="text-blue-600" target="_blank" rel="noopener noreferrer">Vercel’s Privacy Policy</a>.
         </p>
-        <h2 className="text-xl font-semibold mt-6">Third-Party Services</h2>
+        <h3 className="text-xl font-semibold mt-6">Third-Party Services</h3>
         <p>
-            Since website does not collect or track any data, we do not share any of your information with third parties. There is
-            no need to worry about us selling your data because we simply do not have it.
+            We use Vercel Analytics and Speed Insights to monitor and improve website performance. These services may collect anonymous technical data,
+            but we do not receive or store any personally identifiable information. We do not sell, share, or transfer your data, because we don’t have it.
         </p>
-        <h2 className="text-xl font-semibold mt-6">How Do We Protect Your Privacy?</h2>
+
+        <h4 className="text-xl font-semibold mt-6">Your Rights Under GDPR</h4>
         <p>
-            Since website does not store any personal information, there is nothing to protect. That said, we still keep our site
-            secure and take standard measures to ensure it runs smoothly and safely.
+            If you are located in the European Economic Area (EEA), you have rights under the General Data Protection Regulation (GDPR),
+            including the right to access, correct, or erase any personal data we may hold. In our case, we do not store any such data ourselves.
+            You can control data collection by adjusting your browser’s privacy settings or using tools that block analytics scripts.
         </p>
-        <h2 className="text-xl font-semibold mt-6">Changes to This Privacy Policy</h2>
+        <h5 className="text-xl font-semibold mt-6">How Do We Protect Your Privacy?</h5>
         <p>
-            We may update this privacy policy from time to time.
+            Since we do not store any personal data, there is no information to protect. That said, we follow standard best practices 
+            to ensure the site runs smoothly and securely for all visitors.
+        </p>
+        <h6 className="text-xl font-semibold mt-6">Changes to This Privacy Policy</h6>
+        <p>
+            We may update this privacy policy from time to time. Any changes will be reflected on this page.
         </p>
         <p className="mt-6 text-sm">
             Coffee Snobs - Created for educational purposes. No affiliation with any coffee brand.
